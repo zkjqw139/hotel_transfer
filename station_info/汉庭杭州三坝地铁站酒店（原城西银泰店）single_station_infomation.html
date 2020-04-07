@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ab0b6cd0fe64b08acefdba013bc3a1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0ab0b6cd0fe64b08acefdba013bc3a1e" ></div>
+        
+</body>
+<script>    
+    
+            var map_0ab0b6cd0fe64b08acefdba013bc3a1e = L.map(
+                "map_0ab0b6cd0fe64b08acefdba013bc3a1e",
+                {
+                    center: [30.263818163061224, 120.17746694489796],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_422155c4b9034ceb877379ca0dd3b702 = L.tileLayer(
+                "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=8\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "default", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0ab0b6cd0fe64b08acefdba013bc3a1e);
+        
+    
+            var marker_aefb46e8c56849da9d3e6bca214f1d57 = L.marker(
+                [30.3002243, 120.0984213],
+                {"radius": 375}
+            ).addTo(map_0ab0b6cd0fe64b08acefdba013bc3a1e);
+        
+    
+        var popup_43014bf0aaa84f7eb44a24ac54a458d8 = L.popup({"maxWidth": 100000});
+
+        
+            var html_2f07b83163a44b39b72299f1c4ae66a2 = $(`<div id="html_2f07b83163a44b39b72299f1c4ae66a2" style="width: 100.0%; height: 100.0%;">index :0<br>name:  汉庭杭州三坝地铁站酒店（原城西银泰店）<br>lon:   120.0984213<br>lat:   30.3002243<br></div>`)[0];
+            popup_43014bf0aaa84f7eb44a24ac54a458d8.setContent(html_2f07b83163a44b39b72299f1c4ae66a2);
+        
+
+        marker_aefb46e8c56849da9d3e6bca214f1d57.bindPopup(popup_43014bf0aaa84f7eb44a24ac54a458d8)
+        ;
+
+        
+    
+    
+            marker_aefb46e8c56849da9d3e6bca214f1d57.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc795b09b1934ee48119c6d3483b6c66 = L.marker(
+                [30.290851, 120.2126],
+                {"radius": 375}
+            ).addTo(map_0ab0b6cd0fe64b08acefdba013bc3a1e);
+        
+    
+            var icon_8efcc45399194cdababd36f975231a43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc795b09b1934ee48119c6d3483b6c66.setIcon(icon_8efcc45399194cdababd36f975231a43);
+        
+    
+        var popup_f913e033f8454afcb87ef3b2c808756c = L.popup({"maxWidth": 100000});
+
+        
+            var html_dc5330a5c3644612aca960406bc3885b = $(`<div id="html_dc5330a5c3644612aca960406bc3885b" style="width: 100.0%; height: 100.0%;">index :49<br>name:  杭州东站<br>lon:   120.2126<br>lat:   30.290851<br></div>`)[0];
+            popup_f913e033f8454afcb87ef3b2c808756c.setContent(html_dc5330a5c3644612aca960406bc3885b);
+        
+
+        marker_bc795b09b1934ee48119c6d3483b6c66.bindPopup(popup_f913e033f8454afcb87ef3b2c808756c)
+        ;
+
+        
+    
+    
+            marker_bc795b09b1934ee48119c6d3483b6c66.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
